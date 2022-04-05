@@ -1,4 +1,5 @@
 import React from "react";
+import Entry from "./Entry";
 
 function App() {
   return (
@@ -6,9 +7,18 @@ function App() {
       <h1>
         <span>emojipedia</span>
       </h1>
-
       <dl className="dictionary">
-        <div className="term">
+        <Entry />
+      </dl>
+    </div>
+  );
+}
+
+export default App;
+
+//original HTML code
+{
+  /* <div className="term">
           <dt>
             <span className="emoji" role="img" aria-label="Tense Biceps">
               💪
@@ -45,10 +55,5 @@ function App() {
             face is laughing boundlessly. The emoji version of “rofl“. Stands
             for „rolling on the floor, laughing“.
           </dd>
-        </div>
-      </dl>
-    </div>
-  );
+        </div> */
 }
-
-export default App;
